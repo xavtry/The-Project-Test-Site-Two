@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Project Site Two</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Main Content -->
+  <div class="container">
+    <header>
+      <h1 class="glitch" data-text="THE PROJECT SITE TWO">THE PROJECT SITE TWO</h1>
+      <div class="controls">
+        <button id="music-btn">Music ON</button>
+        <button id="snake-btn" class="pulse">Play Snake Game</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>HTML • CSS • JavaScript • Particles • 3D • Snake Game</h2>
+      <p>Everything over-engineered for maximum coolness 2025</p>
+    </section>
+
+    <div class="cards">
+      <div class="card neon">Real-time Particles</div>
+      <div class="card neon">Glitch Text Effect</div>
+      <div class="card neon">Built-in Snake Game</div>
+      <div class="card neon">Cyberpunk Vibes</div>
+    </div>
+  </div>
+
+  <!-- Snake Game Modal -->
+  <div id="snake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">X</span>
+      <h2>SNAKE GAME</h2>
+      <div class="score">Score: <span id="score">0</span></div>
+      <canvas id="snake-canvas" width="400" height="400"></canvas>
+      <div class="game-controls">
+        <p>Use ARROW KEYS or WASD • Press SPACE to pause</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio (cool free cyberpunk track) -->
+  <audio id="bg-music" loop>
+    <source src="https://cdn.glitch.global/a0d3c9f3-f8d1-467e-9e34-03b5e485a3a8/cyberpunk.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
